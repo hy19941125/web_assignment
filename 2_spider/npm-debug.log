@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/node-v4.3.0-linux-x64/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'adduser' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:hy19941125',
+4 verbose adduser   name: 'hy19941125',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: '15172527522@163.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2017-03-03T11:50:46.351Z' }
+5 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:hy19941125
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 7:50:46 PM
+8 verbose request id 18e3708f4fc558c1
+9 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:hy19941125
+10 http 401 https://registry.npmjs.org/-/user/org.couchdb.user:hy19941125
+11 verbose headers { 'content-type': 'application/json',
+11 verbose headers   'cache-control': 'max-age=300',
+11 verbose headers   'content-length': '46',
+11 verbose headers   'accept-ranges': 'bytes',
+11 verbose headers   date: 'Fri, 03 Mar 2017 11:50:49 GMT',
+11 verbose headers   via: '1.1 varnish',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'x-served-by': 'cache-itm7423-ITM',
+11 verbose headers   'x-cache': 'MISS',
+11 verbose headers   'x-cache-hits': '0',
+11 verbose headers   'x-timer': 'S1488541849.258310,VS0,VE634',
+11 verbose headers   vary: 'Accept-Encoding' }
+12 verbose request invalidating /root/.npm/registry.npmjs.org/-/user/org.couchdb.user_3Ahy19941125 on PUT
+13 verbose adduser back [ { [Error: Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:hy19941125] statusCode: 401, code: 'E401' },
+13 verbose adduser   { ok: false, id: 'org.couchdb.user:undefined' },
+13 verbose adduser   '{"ok":false,"id":"org.couchdb.user:undefined"}' ]
+14 warn adduser Incorrect username or password
+14 warn adduser You can reset your account by visiting:
+14 warn adduser
+14 warn adduser     https://npmjs.org/forgot
+15 verbose stack Error: Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:hy19941125
+15 verbose stack     at makeError (/opt/node-v4.3.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+15 verbose stack     at CachingRegistryClient.<anonymous> (/opt/node-v4.3.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+15 verbose stack     at Request._callback (/opt/node-v4.3.0-linux-x64/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+15 verbose stack     at Request.self.callback (/opt/node-v4.3.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:198:22)
+15 verbose stack     at emitTwo (events.js:87:13)
+15 verbose stack     at Request.emit (events.js:172:7)
+15 verbose stack     at Request.<anonymous> (/opt/node-v4.3.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+15 verbose stack     at emitOne (events.js:82:20)
+15 verbose stack     at Request.emit (events.js:169:7)
+15 verbose stack     at IncomingMessage.<anonymous> (/opt/node-v4.3.0-linux-x64/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+16 verbose statusCode 401
+17 verbose cwd /root/spider
+18 error Linux 3.13.0-105-generic
+19 error argv "/opt/node-v4.3.0-linux-x64/bin/node" "/usr/local/bin/npm" "adduser"
+20 error node v4.3.0
+21 error npm  v2.14.12
+22 error code E401
+23 error Registry returned 401 for PUT on https://registry.npmjs.org/-/user/org.couchdb.user:hy19941125
+24 error If you need help, you may report this error at:
+24 error     <https://github.com/npm/npm/issues>
+25 verbose exit [ 1, true ]

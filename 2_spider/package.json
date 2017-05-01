@@ -1,0 +1,18 @@
+{
+  "name": "hy19941125",
+  "version": "1.0.0",
+  "description": "",
+  "main": "spider.js",
+  "repository":{
+   "type":"git",
+   "url":"http://github.com/hy19941125/hy.git"
+},
+  "keywords":[
+"censor",
+"words"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
