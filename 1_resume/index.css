@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+    margin-left: 30px;
+}
+ul li{
+    list-style-type: none;
+}
+
+ #pic{
+    border-color:blue;
+    float: left;
+    margin-left:10px;
+    list-style-type: none;
+}
+
+#resume{
+    font-family:'Times New Roman';
+    font-size:80px;
+    float: left;
+    margin-left:80px;
+    margin-top:80px;
+    opacity: 0.5;
+    color:rgba(52, 83, 145,0.5);
+    list-style:none;
+}
+
+.header{
+    font-family:songti;
+    font-size:25px;
+     opacity: 0.5;
+    color:rgba(52, 83, 145,0.5);
+}
+
+#name{
+    font-size:20px;
+    color:black;
+    float:left;
+    margin-left:10px;
+    margin-top:80px;
+    list-style:none;
+}
+
+#basic_info,#edu_info,#proj_info{
+    margin-left: 30px;
+    text-align: left;
+}
